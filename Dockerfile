@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y build-essential \
     git
 
 RUN pip3 install --upgrade pip\
-    pip3 install PyYAML
+    pip3 install PyYAML==5.4.1
 
 COPY feed.py /usr/bin/feed.py
 
